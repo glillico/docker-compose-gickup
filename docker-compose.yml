@@ -14,4 +14,4 @@ services:
     command: ["/gickup/conf.yml"]
     environment:
       - TZ=Europe/London
-    restart: always
+    # restart: always
