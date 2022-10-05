@@ -10,7 +10,7 @@ services:
     container_name: gickup
     volumes:
       - data:/backup
-      - ${PWD}/conf.yml:/gickup/conf.yml
+      - ./conf.yml:/gickup/conf.yml
     command: ["/gickup/conf.yml"]
     environment:
       - TZ=Europe/London
