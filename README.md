@@ -1,4 +1,4 @@
-# gickup
+# docker-compose-gickup
 
 A docker compose file for my gickup environment.
 
@@ -17,7 +17,7 @@ Copy `example-conf.yml` to `conf.yml` and edit as needed.  Start the container a
 docker compose up  # starts the container
 ```
 
-Once it is confirmed that the container is running and syncing data as required then it is possible to modify the `docker-compose.yml` to always restart the container if it stops, and the `conf.yml` to run gick on a schedule.
+Once it is confirmed that the container is running and syncing data as required then it is possible to modify the `docker-compose.yml` to always restart the container if it stops, and the `conf.yml` to run gickup on a schedule.
 
 To do this uncomment the `cron: 40 03 * * *` line in the `conf.yml` file to schedule gickup to run at 03:40 every day.  Also edit the `docker-compose.yml` file and uncomment the `restart: always` line.
 
