@@ -1,15 +1,17 @@
 source:
   github:
     - token: <github token>
-      user: <username>
+      user: <user>
       url: www.github.com
       username: <username>
+      starred: true
 
 destination:
   local:
-    - path: /backup
+    - path: /<destination path>
+      structured: true
   gitea:
     - token: <gitea token>
       url: http://<gitea address>:<gitea port>
 
-# cron: 40 03 * * *
+cron: 40 03 * * *
